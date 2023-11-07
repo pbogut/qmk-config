@@ -10,5 +10,10 @@
     "src": "config/ergodox",
     "dst": "keyboards/ergodox_ez/keymaps/pbogut",
     "build": "-kb ergodox_ez -km pbogut"
+  },
+  "kyria": {
+    "src": "config/kyria",
+    "dst": "keyboards/splitkb/kyria/keymaps/pbogut",
+    "build": "-kb splitkb/kyria/rev1 -km pbogut"
   }
 }
