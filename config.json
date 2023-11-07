@@ -15,5 +15,10 @@
     "src": "config/kyria",
     "dst": "keyboards/splitkb/kyria/keymaps/pbogut",
     "build": "-kb splitkb/kyria/rev1 -km pbogut"
+  },
+  "dactyl_gaming": {
+    "src": "config/dactyl_gaming",
+    "dst": "keyboards/dactyl_gaming",
+    "build": "-kb dactyl_gaming -km default"
   }
 }
