@@ -1,0 +1,16 @@
+#ifndef CONFIG_USER_H
+#define CONFIG_USER_H
+#define EE_HANDS
+
+#undef MOUSEKEY_DELAY
+#undef MOUSEKEY_TIME_TO_MAX
+#undef MOUSEKEY_MAX_SPEED
+
+#define MOUSEKEY_DELAY          10
+#define MOUSEKEY_TIME_TO_MAX    250
+#define MOUSEKEY_MAX_SPEED      5
+
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
+
+#endif
