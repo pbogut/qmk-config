@@ -20,5 +20,10 @@
     "src": "config/dactyl_gaming",
     "dst": "keyboards/dactyl_gaming",
     "build": "-kb dactyl_gaming -km default"
+  },
+  "pedals": {
+    "src": "config/pedals",
+    "dst": "keyboards/pedals",
+    "build": "-kb pedals -km default"
   }
 }
