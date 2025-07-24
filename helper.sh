@@ -45,6 +45,12 @@ while test $# -gt 0; do
             action="init"
             shift
             ;;
+        gencomp)
+            action="gencomp"
+            shift
+            kb="$1"
+            shift
+            ;;
         flash)
             action="flash"
             shift
@@ -106,6 +112,14 @@ if [[ $action == "compile" ]]; then
     cd "qmk_firmware" || exit 1
     # shellcheck disable=SC2086
     qmk compile $build
+fi
+
+if [[ $action == "gencomp" ]]; then
+    __link
+    build=$(jq ".$kb.build" -r config.json)
+    cd "qmk_firmware" || exit 1
+    # shellcheck disable=SC2086
+    qmk generate-compilation-database $build
 fi
 
 if [[ $action == "flash" ]]; then
