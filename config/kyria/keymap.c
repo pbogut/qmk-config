@@ -602,9 +602,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     /*     } */
     /* } else if (IS_LAYER_ON(TEXT)) { */
     /*     if (clockwise) { */
-    /*         tap_code(KC_MS_WH_LEFT); */
+    /*         tap_code(X_MS_WH_LEFT); */
     /*     } else { */
-    /*         tap_code(KC_MS_WH_RIGHT); */
+    /*         tap_code(X_MS_WH_RIGHT); */
     /*     } */
     /* } else if (IS_LAYER_ON(NUMBERS)) { */
     /*     if (clockwise) { */
@@ -634,9 +634,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     } else {
         if (index == ENC_RIGHT) {
             if (clockwise) {
-                tap_code(KC_MS_WH_DOWN);
+                tap_code(QK_MOUSE_WHEEL_DOWN);
             } else {
-                tap_code(KC_MS_WH_UP);
+                tap_code(QK_MOUSE_WHEEL_UP);
             }
         }
         if (index == ENC_LEFT) {
