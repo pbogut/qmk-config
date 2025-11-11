@@ -176,8 +176,8 @@ void matrix_init_user(void) {
 
 void matrix_scan_user(void) {
   if (auto_fire == true) {
-    register_code(KC_BTN1);
-    unregister_code(KC_BTN1);
+    register_code(MS_BTN1);
+    unregister_code(MS_BTN1);
   }
 }
 
